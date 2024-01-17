@@ -8,7 +8,6 @@ export const Container = styled.div`
   line-height: 1.6;
   p {
     color: #555;
-    font-size: 15px;
   }
   h1 {
     color: #333;
@@ -16,7 +15,7 @@ export const Container = styled.div`
   }
   .highlight {
     color: #0161bf;
-    font-size: 16px;
+    font-size: 17px;
   }
 
   @media screen and (min-width: 690px) {
@@ -27,7 +26,7 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-  width: 60%;
+  width: 80%;
   height: 45px;
   margin: 0 auto;
   margin-top: 30px;
@@ -35,6 +34,7 @@ export const Button = styled.button`
   border-color: transparent;
   background-color: #0161b0;
   color: #fff;
+  font-size: 18px;
   transition: all 0.2s ease-in-out;
   &:hover {
     transform: translate(0px, -4px);
