@@ -8,7 +8,6 @@ import {
 } from "./style.js";
 
 import { FaBars, FaTimes } from "react-icons/fa";
-// import "./link.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import Logo from "../../assets/LogoOrb.png";
@@ -37,7 +36,7 @@ const Navbar = () => {
         <MobileIcon onClick={() => setShowMobileMenu(!showMobileMenu)}>
           {showMobileMenu ? <FaTimes /> : <FaBars />}
         </MobileIcon>
-        <Menu open={showMobileMenu}>
+        <Menu open={showMobileMenu} className={scrolled ? "scrolled" : ""}>
           <MenuItem>
             <Link
               className="Link"

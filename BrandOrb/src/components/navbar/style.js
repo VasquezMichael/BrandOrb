@@ -3,8 +3,8 @@ export const Container = styled.div`
   position: fixed;
   width: 100%;
   min-width: 300px;
-  height: 100px;
-  background-color: #0161bf;
+  height: 90px;
+  background-color: transparent;
   color: #fff;
   transition: all 0.3s ease-in-out;
   z-index: 100;
@@ -12,7 +12,8 @@ export const Container = styled.div`
   padding-right: 60px;
   @media screen and (min-width: 690px) {
     &.scrolled {
-      opacity: 0.9;
+      background-color: #0161bf;
+      opacity: 0.8;
       height: 80px;
     }
   }
@@ -21,8 +22,9 @@ export const Container = styled.div`
     padding-left: 20px;
     padding-right: 20px;
     &.scrolled {
+      background-color: #0161bf;
       height: 80px;
-      opacity: 0.9;
+      opacity: 0.8;
     }
     .Logo-Container img {
       width: 80px;
@@ -61,7 +63,6 @@ export const Menu = styled.ul`
   gap: 20px;
   @media screen and (max-width: 690px) {
     position: absolute;
-    background-color: #0161bf;
     top: 80px;
     left: ${({ open }) => (open ? "0" : "-100%")};
     width: 100%;
@@ -69,6 +70,7 @@ export const Menu = styled.ul`
     flex-direction: column;
     justify-content: center;
     transition: 0.9s all ease;
+    background-color: #0161bf;
   }
 `;
 
@@ -104,9 +106,7 @@ export const MobileIcon = styled.div`
     display: flex;
     cursor: pointer;
     align-items: center;
-
     svg {
-      fill: #fff;
       margin-right: 0.5rem;
       font-size: 1.8rem;
     }

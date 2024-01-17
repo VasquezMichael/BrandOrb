@@ -1,7 +1,11 @@
 import React from "react";
-import { Container } from "./style";
+import { Container, Button } from "./style";
 const Hero = () => {
-  return <Container></Container>;
+  return (
+    <Container>
+      <Button>CONTACT US</Button>
+    </Container>
+  );
 };
 
 export default Hero;
