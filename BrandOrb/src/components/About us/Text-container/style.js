@@ -26,7 +26,7 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-  width: 80%;
+  width: 100%;
   height: 45px;
   margin: 0 auto;
   margin-top: 30px;
@@ -34,7 +34,7 @@ export const Button = styled.button`
   border-color: transparent;
   background-color: #0161b0;
   color: #fff;
-  font-size: 18px;
+  font-size: 17px;
   transition: all 0.2s ease-in-out;
   &:hover {
     transform: translate(0px, -4px);
